@@ -1,5 +1,5 @@
 .container {
-  position: fixed;
+  position: relative;
 }
 
 .item {
@@ -21,6 +21,8 @@
 .bg {
   object-fit: contain;
   opacity: 0.2;
+  user-select: none;
+  pointer-events: none;
 }
 
 .text {

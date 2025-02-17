@@ -30,7 +30,7 @@ const menuItems = [
         icon: <MdSupervisedUserCircle />,
       },
       {
-        title: "Products",
+        title: "Generate PGA",
         path: "/dashboard/products",
         icon: <MdShoppingBag />,
       },

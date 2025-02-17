@@ -25,7 +25,7 @@ const Transactions = () => {
                   height={40}
                   className={styles.userImage}
                 />
-                John Doe
+                Abdul kodir
               </div>
             </td>
             <td>
@@ -33,7 +33,7 @@ const Transactions = () => {
                 Pending
               </span>
             </td>
-            <td>14.02.2024</td>
+            <td>14.02.2025</td>
             <td>$3.200</td>
           </tr>
           <tr>
@@ -46,13 +46,13 @@ const Transactions = () => {
                   height={40}
                   className={styles.userImage}
                 />
-                John Doe
+                Syariffudin
               </div>
             </td>
             <td>
               <span className={`${styles.status} ${styles.done}`}>Done</span>
             </td>
-            <td>14.02.2024</td>
+            <td>14.02.2025</td>
             <td>$3.200</td>
           </tr>
           <tr>
@@ -65,7 +65,7 @@ const Transactions = () => {
                   height={40}
                   className={styles.userImage}
                 />
-                John Doe
+                Arif Hutama
               </div>
             </td>
             <td>
@@ -73,7 +73,7 @@ const Transactions = () => {
                 Cancelled
               </span>
             </td>
-            <td>14.02.2024</td>
+            <td>14.02.2025</td>
             <td>$3.200</td>
           </tr>
           <tr>
@@ -86,7 +86,7 @@ const Transactions = () => {
                   height={40}
                   className={styles.userImage}
                 />
-                John Doe
+                Fauzi Rahman
               </div>
             </td>
             <td>
@@ -94,7 +94,7 @@ const Transactions = () => {
                 Pending
               </span>
             </td>
-            <td>14.02.2024</td>
+            <td>14.02.2025</td>
             <td>$3.200</td>
           </tr>
         </tbody>

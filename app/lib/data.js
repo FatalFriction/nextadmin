@@ -8,7 +8,7 @@ export const fetchUsers = async (q, page) => {
 
   try {
     connectToDB();
-    const count = await User.find({ username: { $regex: regex } }).count();
+    const count = await User.find({ username: { $regex: regex } }).countDocuments();
     const users = await User.find({ username: { $regex: regex } })
       .limit(ITEM_PER_PAGE)
       .skip(ITEM_PER_PAGE * (page - 1));
@@ -39,7 +39,7 @@ export const fetchProducts = async (q, page) => {
 
   try {
     connectToDB();
-    const count = await Product.find({ title: { $regex: regex } }).count();
+    const count = await Product.find({ title: { $regex: regex } }).countDocuments();
     const products = await Product.find({ title: { $regex: regex } })
       .limit(ITEM_PER_PAGE)
       .skip(ITEM_PER_PAGE * (page - 1));
@@ -62,23 +62,22 @@ export const fetchProduct = async (id) => {
 };
 
 // DUMMY DATA
-
 export const cards = [
   {
     id: 1,
-    title: "Total Users",
+    title: "Total Pengguna",
     number: 10.928,
     change: 12,
   },
   {
     id: 2,
-    title: "Stock",
+    title: "Stok QRIS",
     number: 8.236,
     change: -2,
   },
   {
     id: 3,
-    title: "Revenue",
+    title: "Saldo",
     number: 6.642,
     change: 18,
   },
