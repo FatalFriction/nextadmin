@@ -1,22 +1,27 @@
-import { MdSupervisedUserCircle } from "react-icons/md";
+import PropTypes from "prop-types";
 import styles from "./card.module.css";
 
-const Card = ({ item }) => {
+const Card = ({ title, number, change }) => {
   return (
     <div className={styles.container}>
-      <MdSupervisedUserCircle size={24} />
       <div className={styles.texts}>
-        <span className={styles.title}>{item.title}</span>
-        <span className={styles.number}>{item.number}</span>
+        <span className={styles.title}>{title}</span>
+        <span className={styles.number}>{number}</span>
         <span className={styles.detail}>
-          <span className={item.change > 0 ? styles.positive : styles.negative}>
-            {item.change}%
+          <span className={change > 0 ? styles.positive : styles.negative}>
+            {change}%
           </span>{" "}
-          {item.change > 0 ? "more" : "less"} than previous week
+          {change > 0 ? "more" : "less"} than previous week
         </span>
       </div>
     </div>
   );
+};
+
+Card.propTypes = {
+  title: PropTypes.string.isRequired,
+  number: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  change: PropTypes.number.isRequired,
 };
 
 export default Card;

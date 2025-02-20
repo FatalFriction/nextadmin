@@ -1,0 +1,99 @@
+/* button.module.css */
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 10px 16px;
+  transition: all 0.2s ease-in-out;
+  border: none;
+  cursor: pointer;
+}
+
+.primary {
+  background-color: #2563eb;
+  color: white;
+}
+
+.primary:hover {
+  background-color: #1d4ed8;
+}
+
+.secondary {
+  background-color: #6b7280;
+  color: white;
+}
+
+.secondary:hover {
+  background-color: #4b5563;
+}
+
+.success {
+  background-color: #16a34a;
+  color: white;
+}
+
+.success:hover {
+  background-color: #15803d;
+}
+
+.danger {
+  background-color: #dc2626;
+  color: white;
+}
+
+.danger:hover {
+  background-color: #b91c1c;
+}
+
+.warning {
+  background-color: #f59e0b;
+  color: white;
+}
+
+.warning:hover {
+  background-color: #d97706;
+}
+
+.outline {
+  border: 2px solid #6b7280;
+  background: transparent;
+  color: #374151;
+}
+
+.outline:hover {
+  background: #f3f4f6;
+}
+
+.sm {
+  font-size: 14px;
+  padding: 6px 12px;
+}
+
+.md {
+  font-size: 16px;
+  padding: 10px 16px;
+}
+
+.lg {
+  font-size: 18px;
+  padding: 12px 20px;
+}
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.loader {
+  margin-right: 8px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

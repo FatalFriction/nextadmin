@@ -12,3 +12,16 @@ export const connectToDB = async () => {
     throw new Error(error);
   }
 };
+
+export const formatCurrency = (amount) => {
+  if (typeof amount !== "number") {
+    console.warn("formatCurrency: Expected a number");
+    return amount;
+  }
+
+  return new Intl.NumberFormat("id-ID", {
+    style: "currency",
+    currency: "IDR",
+    minimumFractionDigits: 0, // No decimals for IDR
+  }).format(amount);
+};

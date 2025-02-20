@@ -36,14 +36,55 @@
   color: white;
 }
 
-.pending{
+.statusButton {
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 90px;
+  text-align: center;
+}
+
+.pending {
   background-color: #f7cb7375;
 }
 
-.done{
+.done {
   background-color: #afd6ee75;
 }
 
-.cancelled{
+.cancelled {
   background-color: #f7737375;
+}
+
+.addButton{
+  padding: 10px;
+  background-color: #5d57c9;
+  color: var(--text);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.view{
+  background-color: teal;
+}
+
+.button{
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--text);
+  border: none;
+  cursor: pointer;
+}
+
+.top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

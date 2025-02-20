@@ -1,0 +1,72 @@
+.container {
+  padding: 24px;
+  display: grid;
+  gap: 24px;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.chartGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.card {
+  padding: 16px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableHeader th {
+  text-align: start;
+  padding: 10px;     
+}
+
+.tableRow {
+  border-top: 1px solid #ddd;
+}
+
+.tableRow td {
+  padding: 16px;
+}
+
+.status {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.pending {
+  background-color: #f7cb7375;
+}
+
+.success {
+  background-color: #afd6ee75;
+}
+
+.cancelled {
+  background-color: #f7737375;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.ExportContainer {
+  display: flex;
+  display: row;
+  justify-content: space-between;
+}
